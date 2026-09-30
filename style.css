@@ -1,0 +1,111 @@
+/* ===== Base ===== */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #f6f7f6;
+  color: #222;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 26px 26px 40px;
+  background: #fff;
+  min-height: 100vh;
+}
+
+h1 {
+  margin: 0 0 32px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  color: #222;
+}
+
+/* ===== ESTILOS DE FORMULARIO ===== */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+input {
+  width: 100%;
+  padding: 14px 15px;
+  font-size: 1rem;
+  border: 1px solid #dcdedd;
+  border-radius: 10px;
+  background: #fff;
+  color: #222;
+}
+input::placeholder { color: #6b6f6e; }
+input:focus {
+  outline: 2px solid #2f6f60;
+  outline-offset: 1px;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+#btn-agregar {
+  align-self: flex-start;
+  padding: 12px 22px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: #2f6f60;
+  border: none;
+  border-radius: 10px;
+}
+#btn-agregar:hover { background: #265b4f; }
+
+/* ===== ESTILOS DE ITEMS Y PÁGINA ===== */
+.buscador { margin-top: 25px; }
+
+.lista {
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
+}
+
+.contacto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #ecedec;
+}
+.contacto .datos { display: flex; flex-direction: column; min-width: 0; }
+.contacto .nombre { font-weight: 600; overflow-wrap: anywhere; }
+.contacto .telefono { color: #6b6f6e; font-size: 0.9rem; }
+
+.btn-eliminar {
+  padding: 7px 12px;
+  font-size: 0.85rem;
+  color: #a33a3a;
+  background: #fff;
+  border: 1px solid #e3c4c4;
+  border-radius: 8px;
+}
+.btn-eliminar:hover { background: #fbeeee; }
+
+.vacio {
+  margin: 44px 0;
+  text-align: center;
+  color: #6b6f6e;
+}
+
+.pie {
+  margin-top: 30px;
+  padding-top: 24px;
+  border-top: 1px solid #dcdedd;
+}
+.pie p {
+  margin: 0;
+  font-weight: 700;
+  color: #6b6f6e;
+}
